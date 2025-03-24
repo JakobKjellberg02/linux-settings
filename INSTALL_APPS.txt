@@ -1,0 +1,9 @@
+maple 2024
+aseprite
+godot
+onedrive
+discord
+spotify
+nvim
+vscode
+dotnet
