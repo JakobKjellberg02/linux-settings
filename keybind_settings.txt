@@ -1,0 +1,5 @@
+[Application: Keybind Remapper]
+Caps lock -> AltGr
+
+[BIOS]
+Switch Fn and Ctrl

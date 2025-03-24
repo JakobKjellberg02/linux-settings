@@ -1,0 +1,18 @@
+[Unit]
+Description=Rclone Mount OneDrive
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone \
+  --config /home/jakobkjellberg02/.config/rclone/rclone.conf \
+  mount remote: /home/jakobkjellberg02/OneDrive \
+  --vfs-cache-mode writes 
+Restart=on-failure
+RestartSec=5s
+User=jakobkjellberg02
+Group=jakobkjellberg02
+Environment=HOME=/home/jakobkjellberg02
+
+[Install]
+WantedBy=multi-user.target
